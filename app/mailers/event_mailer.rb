@@ -1,5 +1,5 @@
 class EventMailer < ApplicationMailer
-  default from: "fefe@yopmail.com"
+  default from: "christhp@yopmail.com"
 
   def attendance_email(event, organizer)
     @organizer = organizer
