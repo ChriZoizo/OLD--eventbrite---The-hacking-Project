@@ -1,5 +1,5 @@
 class EventController < ApplicationController
-  before_action :authenticate_user!, only [:create, :new]
+  before_action :authenticate_user!, only: [:create, :new]
 
   def index
     @event = Event.all
@@ -25,5 +25,6 @@ class EventController < ApplicationController
 
   def show
     @event = Event.find(params[:id])
+    @end_date = @event.start_date + (@event.duration * 60)
   end
 end
