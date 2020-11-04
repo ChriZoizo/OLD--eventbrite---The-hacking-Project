@@ -23,6 +23,9 @@
           <h5 class="card-text"><%= @event.description%></h5>
           <br>
           <p><%= "Contact: #{@event.organizer.email}"%></p>
+          <% if can_join? == true %>
+            <%= link_to "Payer", new_charge_path(event_price: @event.id), :class => "btn btn-info"%>
+          <%end%>
         </div>
       </div>
     </div>
