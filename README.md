@@ -1,4 +1,6 @@
-# README
+# EVENTBRITE (Idée deja deposé tel quel... raté...)
+
+Ce projet etait censer etre un service pour les associations qui voulait crées des evenements... Apparemment quelqu'un a piqué li'dée tel quel. Honteux....
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
